@@ -1,0 +1,159 @@
+/* ============================================================
+   Global Styles — Portfolio Design System
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS Design Tokens ─────────────────────────────────────── */
+:root {
+  --bg-primary:   #f5f5f0;
+  --bg-secondary: #eef5e6;
+  --text-primary: #181812;
+  --text-muted:   #57574e;
+  --border:       rgba(20, 83, 45, 0.12);
+  --card-bg:      rgba(255, 255, 255, 0.72);
+  --nav-bg:       rgba(245, 245, 240, 0.88);
+}
+
+/* ── Base Reset ────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ── Magic Pattern Background ──────────────────────────────── */
+.magicpattern {
+  background-color: #fff;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(34,197,94,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(212,230,165,0.15) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2316a34a' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ── Utility Classes ───────────────────────────────────────── */
+@layer components {
+
+  /* -- Buttons ------------------------------------------------ */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-body font-semibold
+           rounded-full transition-all duration-250 ease-smooth cursor-pointer
+           select-none focus:outline-none focus:ring-2 focus:ring-primary-500/40;
+  }
+  .btn-sm   { @apply px-4 py-1.5 text-xs; }
+  .btn-md   { @apply px-6 py-2.5 text-sm; }
+  .btn-lg   { @apply px-8 py-3.5 text-base; }
+
+  .btn-primary {
+    @apply btn bg-primary-800 text-white
+           hover:bg-primary-700 hover:-translate-y-0.5
+           shadow-btn hover:shadow-btn-hover;
+  }
+  .btn-outline {
+    @apply btn border border-primary-800 text-primary-800
+           hover:bg-primary-800 hover:text-white hover:-translate-y-0.5;
+  }
+  .btn-ghost {
+    @apply btn border-primary-200 border-[1.5px] text-primary-700 hover:bg-primary-50 hover:-translate-y-0.5;
+  }
+
+  /* -- Cards -------------------------------------------------- */
+  .card {
+    @apply rounded-2xl bg-white border border-primary-100
+           shadow-card transition-all duration-350 ease-smooth;
+  }
+  .card-hover {
+    @apply hover:-translate-y-1 hover:shadow-card-hover;
+  }
+
+  /* -- Section Wrappers --------------------------------------- */
+  .section {
+    @apply py-20 px-5 sm:px-8 md:px-12 lg:px-20 xl:px-28;
+  }
+  .section-sm {
+    @apply py-12 px-5 sm:px-8 md:px-12 lg:px-20 xl:px-28;
+  }
+  .container-xl {
+    @apply max-w-7xl mx-auto w-full;
+  }
+  .container-lg {
+    @apply max-w-5xl mx-auto w-full;
+  }
+  .container-md {
+    @apply max-w-3xl mx-auto w-full;
+  }
+
+  /* -- Typography --------------------------------------------- */
+  .heading-display {
+    @apply font-display font-black tracking-tight leading-none;
+  }
+  .heading-section {
+    @apply font-display font-bold tracking-tight leading-tight;
+  }
+  .label-tag {
+    @apply font-mono text-2xs uppercase tracking-widest text-primary-700
+           bg-primary-50 border border-primary-200 rounded-full px-3 py-1;
+  }
+
+  /* -- Badge / Tag -------------------------------------------- */
+  .tech-badge {
+    @apply inline-block font-mono text-2xs font-medium uppercase tracking-wide
+           bg-accent-light text-primary-800 border border-accent-dark/30
+           rounded-full px-2.5 py-0.5;
+  }
+
+  /* -- Input -------------------------------------------------- */
+  .input-field {
+    @apply w-full px-4 py-2.5 rounded-xl bg-white border border-base-200
+           font-body text-sm text-base-900 placeholder-base-400
+           focus:outline-none focus:ring-2 focus:ring-primary-500/30
+           focus:border-primary-400 transition-all duration-200;
+  }
+  .label {
+    @apply block font-body font-medium text-sm text-base-700 mb-1;
+  }
+
+  /* -- Divider ------------------------------------------------ */
+  .divider {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-primary-200 to-transparent;
+  }
+
+  /* -- Nav Link ----------------------------------------------- */
+  .nav-link {
+    @apply relative font-body font-medium text-sm text-base-700 transition-colors
+           duration-200 hover:text-primary-800;
+  }
+  .nav-link-active {
+    @apply text-primary-800 after:absolute after:bottom-0 after:left-0
+           after:w-full after:h-0.5 after:bg-primary-600 after:rounded-full;
+  }
+
+  /* -- Animations -------------------------------------------- */
+  .animate-on-load { opacity: 0; }
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: #86efac; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #4ade80; }
+
+/* ── Selection ─────────────────────────────────────────────── */
+::selection {
+  background-color: rgba(34, 197, 94, 0.25);
+  color: #052e16;
+}
