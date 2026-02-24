@@ -144,10 +144,12 @@ function Home() {
             className="w-52 sm:w-64 md:w-72 lg:w-80 mx-auto drop-shadow-xl animate-float"
           />
           <div className="mt-4 flex items-center justify-center gap-3">
-            <Button onClick={()=>navigate("/contact")} size="lg">Contact</Button>
+            <Button onClick={() => navigate("/contact")} size="lg">
+              Contact
+            </Button>
             <Button variant="ghost" size="lg">
               <a
-                href="https://drive.google.com/file/d/1GfTjufcJsM9PJzsvZQHWsvpGO366z9CA/view?usp=sharing"
+                href="https://drive.google.com/file/d/1GeGZo7RUI3jmgdblAcHILkLeo4MTU1cF/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex justify-center items-center gap-3"

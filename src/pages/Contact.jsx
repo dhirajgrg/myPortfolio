@@ -9,7 +9,7 @@ const socialLinks = [
     icon: <FaLinkedin className="text-[#0077B5]" />,
     label: "LinkedIn",
     value: "linkedin.com/in/dhiraj",
-    link: "https://linkedin.com/in/dhiraj",
+    link: "https://www.linkedin.com/in/dhiraj-gurung-682b75254/",
   },
   {
     icon: <FaXTwitter className="text-base-900" />,
