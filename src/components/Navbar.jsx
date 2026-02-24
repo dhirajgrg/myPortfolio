@@ -46,7 +46,7 @@ function Navbar({ links, mobileHamburger = true, className = "" }) {
         </NavLink>
 
         {/* ── Desktop Nav (Hidden on Mobile) ── */}
-        <div className="hidden md:flex items-center gap-8 lg:gap-12">
+        <div className="hidden md:flex  items-center gap-8 lg:gap-12">
           {links.map((link) => (
             <NavLink
               key={link.path}
@@ -59,10 +59,11 @@ function Navbar({ links, mobileHamburger = true, className = "" }) {
               {link.label}
             </NavLink>
           ))}
-          <Button variant="outline" size="sm">
-            My Resume
-          </Button>
         </div>
+
+        <Button variant="primary"  size="md" className="hidden md:block">
+          ↓ Resume
+        </Button>
 
         {/* ── Mobile Hamburger Button ── */}
         {mobileHamburger && (
@@ -111,9 +112,6 @@ function Navbar({ links, mobileHamburger = true, className = "" }) {
                 {link.label}
               </NavLink>
             ))}
-            <div className="mt-6 pt-6 border-t border-slate-100">
-              <Button className="w-full">My Resume</Button>
-            </div>
           </nav>
         </div>
       </div>

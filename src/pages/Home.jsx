@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { BsEye } from "react-icons/bs";
 import Button from "../components/Button";
 import Cards from "../components/Cards";
 import Masonry from "../components/Masonary";
-import Navbar from "../components/Navbar";
+import SkillsMarquee from "../components/SkillsMarquee";
 
 const CARDS_DATA = [
   {
@@ -97,7 +99,8 @@ const TIMELINE = [
   { label: "Nepal Mart", year: "2025" },
 ];
 
-function Home({ links }) {
+function Home() {
+  const navigate = useNavigate();
   return (
     <div className="bg-base-100 min-h-screen">
       {/* ═══════════════════════════════════════════════════════
@@ -141,9 +144,17 @@ function Home({ links }) {
             className="w-52 sm:w-64 md:w-72 lg:w-80 mx-auto drop-shadow-xl animate-float"
           />
           <div className="mt-4 flex items-center justify-center gap-3">
-            <Button size="lg">Contact</Button>
+            <Button onClick={()=>navigate("/contact")} size="lg">Contact</Button>
             <Button variant="ghost" size="lg">
-              ↓ Resume
+              <a
+                href="https://drive.google.com/file/d/1GfTjufcJsM9PJzsvZQHWsvpGO366z9CA/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center items-center gap-3"
+              >
+                <BsEye />
+                Resume
+              </a>
             </Button>
           </div>
         </div>
@@ -196,27 +207,17 @@ function Home({ links }) {
               and user-friendly web applications
             </h2>
           </div>
-
-          {/* Skills pills */}
-          <div className="mt-10 flex flex-wrap justify-center gap-2">
-            {[
-              "React",
-              "Node.js",
-              "TypeScript",
-              "PostgreSQL",
-              "MongoDB",
-              "Express.js",
-              "REST APIs",
-              "Docker",
-              "Git",
-            ].map((s) => (
-              <span key={s} className="tech-badge">
-                {s}
-              </span>
-            ))}
-          </div>
         </div>
       </section>
+      {/* ═══════════════════════════════════════════════════════
+          MARQUEE SECTION
+      ═══════════════════════════════════════════════════════ */}
+      <div className="py-16 bg-base-50">
+        {/* Skills pills */}
+
+        <SkillsMarquee />
+        <SkillsMarquee />
+      </div>
 
       {/* ═══════════════════════════════════════════════════════
           PROCESS CARDS
@@ -343,7 +344,9 @@ function Home({ links }) {
           </p>
 
           <div className="flex items-center gap-3">
-            <Button size="lg">Contact Me</Button>
+            <Button onClick={() => navigate("/contact")} size="lg">
+              Contact Me
+            </Button>
             <Button variant="ghost" size="lg">
               ↓ Resume
             </Button>
