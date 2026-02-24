@@ -61,8 +61,14 @@ function Navbar({ links, mobileHamburger = true, className = "" }) {
           ))}
         </div>
 
-        <Button variant="primary"  size="md" className="hidden md:block">
-          ↓ Resume
+        <Button variant="primary" size="md" className="hidden md:block">
+          <a
+            href="https://drive.google.com/uc?export=download&id=1GeGZo7RUI3jmgdblAcHILkLeo4MTU1cF"
+            rel="noopener noreferrer"
+            className="flex justify-center items-center gap-3"
+          >
+            ↓ Resume
+          </a>
         </Button>
 
         {/* ── Mobile Hamburger Button ── */}
