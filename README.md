@@ -6,7 +6,6 @@ A personal portfolio website showcasing projects, blog posts, and contact detail
 ## Demo
 - Live: (https://myportfolio-f4p3.onrender.com)
 
-## Screnshots
 ![Project Screenshot](public/images/home.jpg)
 ![Project Screenshot](public/images/hero.jpg)
 
