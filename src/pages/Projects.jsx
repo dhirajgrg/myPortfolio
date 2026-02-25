@@ -22,10 +22,10 @@ const projects = [
   {
     title: "Kasturi Bank",
     description:
-      "A comprehensive banking application offering account management, fund transfers, and transaction history.",
+      "use username:jonas@example.com and password:password123. A comprehensive banking application offering account management, fund transfers, and transaction history.",
     tech: ["HTML", "CSS", "JavaScript", "Express", "MongoDB"],
-    githubLink: "https://github.com/dhirajgrg/full-stack-bank-app",
-    liveLink: "https://full-stack-bank-app.onrender.com",
+    githubLink: "https://github.com/dhirajgrg/myPortfolio",
+    liveLink: "https://kasturi-frontend-htbc.onrender.com",
     image: "/images/kasturi-bank.png",
   },
   {
@@ -58,26 +58,30 @@ const GithubIcon = () => (
 );
 
 const ExternalIcon = () => (
-  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+  <svg
+    className="w-4 h-4"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+    />
   </svg>
 );
 
 const Projects = () => {
   return (
-    <section
-      id="projects"
-      className="min-h-screen bg-base-100 section"
-    >
+    <section id="projects" className="min-h-screen bg-base-100 section">
       <div className="container-xl">
-
         {/* Header */}
         <div className="text-center mb-12 pt-8">
           <span className="label-tag">Portfolio</span>
           <h1 className="heading-display text-4xl sm:text-5xl md:text-6xl mt-4 text-base-900">
-            Featured{" "}
-            <span className="text-primary-700 italic">Projects</span>
+            Featured <span className="text-primary-700 italic">Projects</span>
           </h1>
           <p className="mt-4 font-body text-sm sm:text-base text-base-600 max-w-xl mx-auto leading-relaxed">
             A selection of my recent work — from full-stack applications to
@@ -101,9 +105,11 @@ const Projects = () => {
                              group-hover:scale-105 transition-transform duration-500"
                 />
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-primary-950/70 opacity-0
+                <div
+                  className="absolute inset-0 bg-primary-950/70 opacity-0
                                 group-hover:opacity-100 transition-opacity duration-300
-                                flex items-center justify-center">
+                                flex items-center justify-center"
+                >
                   <a
                     href={project.liveLink}
                     target="_blank"
@@ -128,7 +134,9 @@ const Projects = () => {
                 {/* Tech badges */}
                 <div className="flex flex-wrap gap-1.5">
                   {project.tech.map((t) => (
-                    <span key={t} className="tech-badge">{t}</span>
+                    <span key={t} className="tech-badge">
+                      {t}
+                    </span>
                   ))}
                 </div>
 
