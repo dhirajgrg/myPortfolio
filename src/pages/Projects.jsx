@@ -11,13 +11,13 @@ const projects = [
     image: "/images/loadbag.png",
   },
   {
-    title: "AI Chatbot",
+    title: "Node Farm",
     description:
-      "An AI-powered chatbot leveraging Gemini API to provide intelligent, context-aware responses in real-time.",
-    tech: ["React", "Node.js", "Gemini API"],
-    githubLink: "https://github.com/dhirajgrg/ai-chat-bot",
-    liveLink: "https://ai-chat-bot-frontend-j1wh.onrender.com",
-    image: "/images/aichatbot.jpg",
+      "The Basic pure Node js HTTP server and demo of File Sytem to read data from static file",
+    tech: ["Html", "Node.js", "JavaScript"],
+    githubLink: "https://github.com/dhirajgrg/nodeFarm",
+    liveLink: "https://node-farm-x52o.onrender.com",
+    image: "/images/nodefarm.png",
   },
   {
     title: "Kasturi Bank",
