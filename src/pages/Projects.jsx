@@ -2,12 +2,12 @@ import React from "react";
 
 const projects = [
   {
-    title: "Loadbags TODO App",
+    title: "jhola",
     description:
       "A full-stack TODO application with user authentication, where users can manage their tasks efficiently.",
-    tech: ["React"],
-    githubLink: "https://github.com/dhirajgrg/Loadbags",
-    liveLink: "https://loadbags.onrender.com",
+    tech: ["React", "Express", "MongoDB"],
+    githubLink: "https://github.com/dhirajgrg/jhola",
+    liveLink: "https://jhola-topaz.vercel.app/",
     image: "/images/loadbag.png",
   },
   {
@@ -24,18 +24,18 @@ const projects = [
     description:
       "use username:jonas@example.com and password:password123. A comprehensive banking application offering account management, fund transfers, and transaction history.",
     tech: ["HTML", "CSS", "JavaScript", "Express", "MongoDB"],
-    githubLink: "https://github.com/dhirajgrg/myPortfolio",
+    githubLink: "https://github.com/dhirajgrg/full-stack-bank-app",
     liveLink: "https://kasturi-frontend-htbc.onrender.com",
     image: "/images/kasturi-bank.png",
   },
   {
-    title: "Eat N Split",
+    title: "hatemalo",
     description:
       "A web app that helps groups split bills easily, calculating individual shares including tax and tip.",
-    tech: ["React"],
-    githubLink: "https://github.com/dhirajgrg/Eat-N-Split",
-    liveLink: "https://dhirajgrg.github.io/Eat-N-Split/",
-    image: "https://via.placeholder.com/600x400/052e16/86efac?text=Eat+N+Split",
+    tech: ["React", "Express", "MongoDB"],
+    githubLink: "https://github.com/dhirajgrg/hatemalo",
+    liveLink: "https://hatemalo.vercel.app/",
+    image: "/images/hatemalo.png",
   },
 ];
 
