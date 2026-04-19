@@ -109,8 +109,7 @@ function Home() {
       <section
         id="home"
         className="magicpattern relative overflow-hidden min-h-screen flex flex-col
-                   items-center justify-center pt-24 pb-16 px-5 sm:px-8 text-center"
-      >
+                   items-center justify-center pt-24 pb-16 px-5 sm:px-8 text-center">
         {/* Background glow */}
         <div className="pointer-events-none absolute inset-0 bg-hero-pattern" />
 
@@ -122,16 +121,14 @@ function Home() {
         {/* Name */}
         <h1
           className="heading-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl
-                       text-base-900 animate-fade-up"
-        >
+                       text-base-900 animate-fade-up">
           Hi, I'm <span className="text-primary-700 italic">Dhiraj</span>
         </h1>
 
         {/* Tagline */}
         <p
           className="mt-4 font-body text-base sm:text-lg md:text-xl text-base-600
-                      max-w-xl animate-fade-up-d1 leading-relaxed"
-        >
+                      max-w-xl animate-fade-up-d1 leading-relaxed">
           I craft clean, scalable, and user-friendly web applications — end to
           end.
         </p>
@@ -152,8 +149,7 @@ function Home() {
                 href="https://drive.google.com/file/d/1GeGZo7RUI3jmgdblAcHILkLeo4MTU1cF/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex justify-center items-center gap-3"
-              >
+                className="flex justify-center items-center gap-3">
                 <BsEye />
                 Resume
               </a>
@@ -163,10 +159,9 @@ function Home() {
 
         {/* Scroll cue */}
         <div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col
-                        items-center gap-1 animate-fade-in opacity-60"
-        >
-          <span className="font-mono text-2xs uppercase tracking-widest text-base-500">
+          className="absolute    bottom-0  -translate-x-1/2 flex flex-col
+                        items-center gap-1 animate-fade-in opacity-60">
+          <span className="  font-mono text-2xs uppercase tracking-widest text-base-500">
             Scroll
           </span>
           <div className="w-0.5 h-8 bg-gradient-to-b from-primary-400 to-transparent rounded-full" />
@@ -178,8 +173,7 @@ function Home() {
       ═══════════════════════════════════════════════════════ */}
       <section
         id="hello"
-        className="section bg-base-50 relative overflow-hidden"
-      >
+        className="section bg-base-50 relative overflow-hidden">
         <div className="container-xl">
           {/* Small label */}
           <p className="text-center font-bilbo text-3xl sm:text-4xl text-primary-600 mb-2">
@@ -202,8 +196,7 @@ function Home() {
 
             <h2
               className="heading-section text-center text-2xl sm:text-3xl md:text-5xl
-                           lg:text-6xl text-base-900 leading-tight"
-            >
+                           lg:text-6xl text-base-900 leading-tight">
               Focused on building{" "}
               <em className="text-primary-700 not-italic">clean, scalable</em>{" "}
               and user-friendly web applications
@@ -282,8 +275,7 @@ function Home() {
               <div
                 className="relative rounded-3xl overflow-hidden bg-primary-500
                               aspect-[3/4] flex items-end justify-center -rotate-1
-                              shadow-card-hover"
-              >
+                              shadow-card-hover">
                 <img
                   src="/images/man3.png"
                   alt="Dhiraj"
@@ -309,18 +301,15 @@ function Home() {
                   <div
                     key={year}
                     className="flex items-center justify-between px-5 py-3.5
-                               hover:bg-primary-50 transition-colors duration-200 group"
-                  >
+                               hover:bg-primary-50 transition-colors duration-200 group">
                     <span
                       className="font-body font-medium text-sm text-base-800
-                                     group-hover:text-primary-800 transition-colors"
-                    >
+                                     group-hover:text-primary-800 transition-colors">
                       {label}
                     </span>
                     <span
                       className="font-mono text-xs text-base-500 group-hover:text-primary-600
-                                     transition-colors"
-                    >
+                                     transition-colors">
                       {year}
                     </span>
                   </div>
