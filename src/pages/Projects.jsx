@@ -2,13 +2,13 @@ import React from "react";
 
 const projects = [
   {
-    title: "jhola",
+    title: "secure credential drop",
     description:
-      "A full-stack TODO application with user authentication, where users can manage their tasks efficiently.",
+      "users can share secrets key ,API KEY securely to any and this key is one time allowance that means user can reveal at once only then it automatically burned out.",
     tech: ["React", "Express", "MongoDB"],
-    githubLink: "https://github.com/dhirajgrg/jhola",
-    liveLink: "https://jhola-topaz.vercel.app/",
-    image: "/images/loadbag.png",
+    githubLink: "https://github.com/dhirajgrg/Secure-Credential-Drop-api",
+    liveLink: "https://secure-credential-drop-ui-5p5n.vercel.app/",
+    image: "/images/secureCredential.png",
   },
   {
     title: "Node Farm",
@@ -20,13 +20,14 @@ const projects = [
     image: "/images/nodefarm.png",
   },
   {
-    title: "Kasturi Bank",
+    title: "Realtime-grocery-app",
     description:
-      "use username:jonas@example.com and password:password123. A comprehensive banking application offering account management, fund transfers, and transaction history.",
-    tech: ["HTML", "CSS", "JavaScript", "Express", "MongoDB"],
-    githubLink: "https://github.com/dhirajgrg/full-stack-bank-app",
-    liveLink: "https://kasturi-frontend-htbc.onrender.com",
-    image: "/images/kasturi-bank.png",
+      "Real time grocery app where user auth with phone number and password and can place order acoording to location provided ny user. It has user as well as admin dashboard where admin can take control of products and user and orders",
+    tech: ["REact", "Express", "MongoDB"],
+    githubLink: "https://github.com/dhirajgrg",
+    liveLink:
+      "https://mandi-git-main-gdhiraj030-gmailcoms-projects.vercel.app/",
+    image: "/images/groceryApp.png",
   },
   {
     title: "hatemalo",
