@@ -1,9 +1,9 @@
 # My Portfolio
 
-A personal portfolio website showcasing projects, blog posts, and contact details.
+## A personal portfolio website showcasing projects, blog posts, and contact details.
 
-## Demo
-- Live: (https://my-portfolio-seven-mauve-96.vercel.app/)
+# Demo
+   - [App Link](https://my-portfolio-seven-mauve-96.vercel.app/)
 
 ![Project Screenshot](public/images/home.jpg)
 ![Project Screenshot](public/images/hero.jpg)
@@ -121,7 +121,7 @@ Contributions and suggestions are welcome! Please feel free to:
 
 ## 📧 Contact
 
-- **Email:** your-email@example.com
+- **Email:** (gdhiraj030@gmail.com)
 - **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com)
 - **GitHub:** [Your GitHub Profile](https://github.com)
 - **Twitter:** [Your Twitter Handle](https://twitter.com)
