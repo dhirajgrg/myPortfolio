@@ -25,9 +25,9 @@ const projects = [
     description:
       "A full-stack real-time grocery ordering application with user authentication (phone & password) and location-based ordering. It includes both user and admin dashboards, where admins can manage products, users, and orders. Designed to simulate a real-world e-commerce workflow with live updates and scalable backend architecture.",
     tech: ["REact", "Express", "MongoDB"],
-    githubLink: "https://github.com/dhirajgrg",
+    githubLink: "https://github.com/dhirajgrg/mandi-grocery-app",
     liveLink:
-      "https://mandi-git-main-gdhiraj030-gmailcoms-projects.vercel.app/",
+      "https://mandi-three.vercel.app/",
     image: "/images/groceryApp.png",
   },
   {
