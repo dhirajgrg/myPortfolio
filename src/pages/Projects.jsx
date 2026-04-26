@@ -4,7 +4,7 @@ const projects = [
   {
     title: "secure credential drop",
     description:
-      "users can share secrets key ,API KEY securely to any and this key is one time allowance that means user can reveal at once only then it automatically burned out.",
+      "A secure platform that allows users to share sensitive data such as API keys or secret credentials through one-time access links. Once the data is viewed, it is permanently destroyed, ensuring zero risk of reuse or exposure. Built with a focus on privacy, encryption, and secure data handling.",
     tech: ["React", "Express", "MongoDB"],
     githubLink: "https://github.com/dhirajgrg/Secure-Credential-Drop-api",
     liveLink: "https://secure-credential-drop-ui-5p5n.vercel.app/",
@@ -13,8 +13,9 @@ const projects = [
   {
     title: "Node Farm",
     description:
-      "The Basic pure Node js HTTP server and demo of File Sytem to read data from static file",
-    tech: ["Html", "Node.js", "JavaScript"],
+      "A lightweight project demonstrating core Node.js fundamentals, including creating a custom HTTP server and working with the file system. It dynamically reads and serves data from static files without using any frameworks, showcasing how Node works under the hood.",
+    tech: ["React", "Express", "MongoDB"],
+
     githubLink: "https://github.com/dhirajgrg/nodeFarm",
     liveLink: "https://node-farm-x52o.onrender.com",
     image: "/images/nodefarm.png",
@@ -22,7 +23,7 @@ const projects = [
   {
     title: "Realtime-grocery-app",
     description:
-      "Real time grocery app where user auth with phone number and password and can place order acoording to location provided ny user. It has user as well as admin dashboard where admin can take control of products and user and orders",
+      "A full-stack real-time grocery ordering application with user authentication (phone & password) and location-based ordering. It includes both user and admin dashboards, where admins can manage products, users, and orders. Designed to simulate a real-world e-commerce workflow with live updates and scalable backend architecture.",
     tech: ["REact", "Express", "MongoDB"],
     githubLink: "https://github.com/dhirajgrg",
     liveLink:
@@ -32,7 +33,7 @@ const projects = [
   {
     title: "hatemalo",
     description:
-      "A web app that helps groups split bills easily, calculating individual shares including tax and tip.",
+      "A mini marketplace web application inspired by platforms like Facebook Marketplace, where users can list items for sale, browse products, and connect with buyers or sellers. It supports product listings, user interactions, and basic marketplace functionality, making it easy to trade items within a community. Built with a focus on simplicity, usability, and real-world buying/selling workflows.",
     tech: ["React", "Express", "MongoDB"],
     githubLink: "https://github.com/dhirajgrg/hatemalo",
     liveLink: "https://hatemalo.vercel.app/",
@@ -63,8 +64,7 @@ const ExternalIcon = () => (
     className="w-4 h-4"
     fill="none"
     stroke="currentColor"
-    viewBox="0 0 24 24"
-  >
+    viewBox="0 0 24 24">
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -95,8 +95,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <article
               key={index}
-              className="card card-hover group flex flex-col overflow-hidden"
-            >
+              className="card card-hover group flex flex-col overflow-hidden">
               {/* Image */}
               <div className="relative overflow-hidden h-44 bg-base-200">
                 <img
@@ -109,15 +108,13 @@ const Projects = () => {
                 <div
                   className="absolute inset-0 bg-primary-950/70 opacity-0
                                 group-hover:opacity-100 transition-opacity duration-300
-                                flex items-center justify-center"
-                >
+                                flex items-center justify-center">
                   <a
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-outline text-white border-white hover:bg-white
-                               hover:text-primary-900 btn btn-sm px-5 py-2"
-                  >
+                               hover:text-primary-900 btn btn-sm px-5 py-2">
                     View Live ↗
                   </a>
                 </div>
@@ -148,8 +145,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-1.5 font-body text-xs font-medium
-                               text-base-500 hover:text-base-900 transition-colors duration-200"
-                  >
+                               text-base-500 hover:text-base-900 transition-colors duration-200">
                     <GithubIcon />
                     Source
                   </a>
@@ -158,8 +154,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-1.5 font-body text-xs font-medium
-                               text-primary-700 hover:text-primary-500 transition-colors duration-200"
-                  >
+                               text-primary-700 hover:text-primary-500 transition-colors duration-200">
                     Live Demo
                     <ExternalIcon />
                   </a>

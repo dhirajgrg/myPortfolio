@@ -91,12 +91,13 @@ const TECH_ICONS = [
 ];
 
 const TIMELINE = [
-  { label: "Kasturi Bank", year: "2020" },
-  { label: "Load Bags", year: "2021" },
-  { label: "Obsey Clone", year: "2022" },
-  { label: "AI Chatbot", year: "2023" },
-  { label: "Moody Player", year: "2024" },
-  { label: "Nepal Mart", year: "2025" },
+  { label: "Moody Player", year: "2023" },
+  { label: "Node Farm", year: "2024" },
+  { label: "hatemalo -mini market place", year: "2025" },
+  { label: "Mandi -grocery app", year: "2025" },
+  { label: "secure credential Drop", year: "2026" },
+  { label: "TaskFlow -task management API", year: "2026" },
+  { label: "Microservice -ecomm AI-budyy API", year: "2026" },
 ];
 
 function Home() {
@@ -265,7 +266,7 @@ function Home() {
             <h2 className="heading-section text-3xl sm:text-4xl md:text-5xl text-base-900">
               Pushing Boundaries
               <br />
-              <span className="text-primary-700">Since 2017</span>
+              <span className="text-primary-700">Since 2021</span>
             </h2>
           </div>
 
