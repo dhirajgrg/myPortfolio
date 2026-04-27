@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { BsEye } from "react-icons/bs";
 import Button from "../components/Button";
 import Cards from "../components/Cards";
@@ -145,16 +145,18 @@ function Home() {
             <Button onClick={() => navigate("/contact")} size="lg">
               Contact
             </Button>
-            <Button variant="ghost" size="lg">
-              <a
-                href="https://drive.google.com/file/d/1GeGZo7RUI3jmgdblAcHILkLeo4MTU1cF/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
+            <Link
+              to="https://drive.google.com/file/d/1CcKEmI4ffgnm2W7n38UJ41OYJH9TBlyu/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Button
+                variant="ghost"
+                size="lg"
                 className="flex justify-center items-center gap-3">
                 <BsEye />
                 Resume
-              </a>
-            </Button>
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -339,9 +341,18 @@ function Home() {
             <Button onClick={() => navigate("/contact")} size="lg">
               Contact Me
             </Button>
-            <Button variant="ghost" size="lg">
-              ↓ Resume
-            </Button>
+            <Link
+              to="https://drive.google.com/file/d/1CcKEmI4ffgnm2W7n38UJ41OYJH9TBlyu/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Button
+                variant="ghost"
+                size="lg"
+                className="flex justify-center items-center gap-3">
+                <BsEye />
+                Resume
+              </Button>
+            </Link>
           </div>
 
           <div className="divider w-full max-w-sm mt-4" />
