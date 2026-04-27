@@ -147,7 +147,7 @@ function Home() {
             </Button>
             <Button variant="ghost" size="lg">
               <a
-                href="https://drive.google.com/file/d/1GeGZo7RUI3jmgdblAcHILkLeo4MTU1cF/view?usp=sharing"
+                href="https://drive.google.com/file/d/1CcKEmI4ffgnm2W7n38UJ41OYJH9TBlyu/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex justify-center items-center gap-3">
